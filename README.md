@@ -1,6 +1,8 @@
 # Microservice-pool
 A recommendation microservice and a reviews microservice.
 
+### Note: The .csv file used in the example and applied in the service was from a dataset on Kaggle which I applied some pre-processing to. For recommendation service please verify column names with your dataset and make appropriate updates.
+
 This document provides details on the implementation, integration, and functionality of two independent microservices: the Review/Moderation Service and the Recommendation Service.
 ## 1. The Review/Moderation Service
 This service manages user-submitted reviews for video games, storing them in a dedicated database and applying a simple moderation filter.
