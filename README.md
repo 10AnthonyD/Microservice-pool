@@ -38,11 +38,11 @@ Integration Example (Python Client):
 
 ## 2. The Recommendation Service
 This service provides game recommendations based on content-based filtering (cosine similarity using TF-IDF vectors). The machine learning model is loaded into memory only once when the service starts up.
-    - Port: 5004
-    - Data Source: cleaned_games.csv
-    - Key Files:
-        - recommendation_service_app.py: Flask application that wraps the core logic in an API.
-        - recommendation_service.py: The underlying class containing the pandas/sklearn logic.
+   - Port: 5004
+   - Data Source: cleaned_games.csv
+   - Key Files:
+      - recommendation_service_app.py: Flask application that wraps the core logic in an API.
+      - recommendation_service.py: The underlying class containing the pandas/sklearn logic.
 
 ### Implementation Details
 The separation of this service allows the heavy processing power required to load the ML model and dataframes to be isolated from the main web application, improving frontend performance and scalability.
