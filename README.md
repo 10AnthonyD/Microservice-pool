@@ -15,9 +15,10 @@ The service defines a Review model with a status column (pending, approved, reje
 
 ### API Endpoints and Integration
 The service exposes two primary endpoints:
-Endpoint	                Method	            Description	                                                        Example Request Body
-/api/reviews/add	   |    POST	|     Submits a new review; applies moderation check and sets status.	 |   {"user_id": 1, "game_title": "Elden Ring", "rating": 5, "comment": "Great game!"}
-/api/reviews/<game_title>	  GET	  |      Retrieves all approved reviews for a specific game.	         |    N/A
+| Endpoint | Method	| Description | Example Request Body|
+| :--- | :--- | :--- | :--- |
+| /api/reviews/add | POST | Submits a new review; applies moderation check and sets status.	| {"user_id": 1, "game_title": "Elden Ring", "rating": 5, "comment": "Great game!"} |
+| /api/reviews/<game_title> | GET | Retrieves all approved reviews for a specific game. | N/A | 
 
 Integration Example (Python Client):
 
@@ -49,8 +50,9 @@ The separation of this service allows the heavy processing power required to loa
 ### API Endpoints and Integration
 The service exposes one primary endpoint:
 
-Endpoint               Method	                          Description                                        Example Request Body
-/api/recommend	        POST	       Requests recommendations for a specific game title (AppID).	      {"game_title": "Elden Ring"}
+| Endpoint | Method	| Description | Example Request Body|
+| :--- | :--- | :--- | :--- |
+| /api/recommend | POST | Requests recommendations for a specific game title (AppID). | {"game_title": "Elden Ring"} |
 
 ### Integration Example (Python Client):
     python
